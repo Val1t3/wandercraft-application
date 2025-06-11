@@ -1,4 +1,4 @@
-# wandercraft-application/src/day-02/part_02.py
+# wandercraft-application/src/day-02, part_02.py
 # Code written by Valentin Woehrel, 2025
 
 
