@@ -3,6 +3,24 @@
 
 
 def check_around(x: int, y: int, dx: int, dy: int) -> int:
+    """
+    Function to check if the word 'XMAS' exists at the given (x, y) position
+    and in the given (dx, dy) direction.
+
+    Args:
+        x: int
+            x position.
+        y: int
+            y position.
+        dx: int
+            x direction.
+        dy: int
+            y direction.
+
+    Returns:
+        int:
+            0: word not found, 1: word found
+    """
     word = "XMAS"
 
     # check if every letter appears
