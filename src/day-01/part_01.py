@@ -16,17 +16,15 @@ def create_lists(input_path: str) -> Tuple[List[int], List[int]]:
     list1 = []
     list2 = []
 
-    # read file
-    file = open(input_path)
+    with open(input_path) as file:
+        # for each line
+        for line in file:
+            # retrive the two numbers in the line
+            first, second = line.split("   ")
 
-    # for each line
-    for line in file:
-        # retrive the two numbers in the line
-        first, second = line.split("   ")
-
-        # add numbers in the good lists
-        list1.append(int(first))
-        list2.append(int(second))
+            # add numbers in the good lists
+            list1.append(int(first))
+            list2.append(int(second))
 
     return (list1, list2)
 
