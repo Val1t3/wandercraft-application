@@ -13,11 +13,11 @@ if __name__ == "__main__":
     with open("input.txt") as file:
         content = file.read()
 
-        # find matches with the pattern in the line
-        matches = re.findall(pattern, content)
+    # find matches with the pattern in the file
+    matches = re.findall(pattern, content)
 
-        # increment counter with all mul
-        for x, y in matches:
-            count += int(x) * int(y)
+    # increment counter with all mul
+    for x, y in matches:
+        count += int(x) * int(y)
 
-        print(count)
+    print(count)
